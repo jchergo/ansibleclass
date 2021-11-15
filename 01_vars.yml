@@ -14,8 +14,8 @@
     ansible.builtin.package:
       name: "{{ package }}"
       state: latest
-- name: Enable httpd service
 
+  - name: Enable httpd service
     ansible.builtin.systemd:
       name: httpd
       state: started
